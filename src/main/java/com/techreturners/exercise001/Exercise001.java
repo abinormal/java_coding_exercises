@@ -32,15 +32,15 @@ public class Exercise001 {
     public int countLinuxUsers(List<User> users) {
         //given a list of items of type User. 
         //check each item in list for "Linux" at location [2] in type User
-        int size = users.size();
-        int linuxUsers = 0;
-
-        for (int i = 0; i < size ; i++) {
-            //Find "Linux"
-            
-            linuxUsers = i; //number of Linux users
-        }
-
+       
+        int linuxUsers = 0;        
+        //users is a list
+        //user is of type User 
+        
+        for (int i = 0; i < users.size() ; i++) {
+            if (users.get(i).getType() == "Linux")
+                linuxUsers++;
+        } 
         return linuxUsers;
     }
 }
