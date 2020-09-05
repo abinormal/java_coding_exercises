@@ -18,8 +18,6 @@ public class Exercise001 {
         // more generally: int k = (int)(value*(percentage/100.0f));
         double vat = (originalPrice*(vatRate/100.0f) );
 
-       // double total = originalPrice + vat;
-
         // Format to truncate trailing decimal places
         DecimalFormat df = new DecimalFormat("#.##");
 
@@ -32,6 +30,17 @@ public class Exercise001 {
     }
 
     public int countLinuxUsers(List<User> users) {
-        return 0;
+        //given a list of items of type User. 
+        //check each item in list for "Linux" at location [2] in type User
+        int size = users.size();
+        int linuxUsers = 0;
+
+        for (int i = 0; i < size ; i++) {
+            //Find "Linux"
+            
+            linuxUsers = i; //number of Linux users
+        }
+
+        return linuxUsers;
     }
 }
