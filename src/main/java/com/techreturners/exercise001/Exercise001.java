@@ -38,7 +38,7 @@ public class Exercise001 {
         //user is of type User 
         
         for (int i = 0; i < users.size() ; i++) {
-            if (users.get(i).getType() == "Linux")
+            if (users.get(i).getType().equals("Linux") )
                 linuxUsers++;
         } 
         return linuxUsers;
